@@ -2,6 +2,7 @@ import { Grid, GridItem, Show } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import GameGrid from './components/GameGrid'
 import AccordionComponent from './components/AccordionComponent'
+import GameCard from './components/GameCard'
 
 function App() {
 
