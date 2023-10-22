@@ -8,12 +8,13 @@ export interface Platform {
   slug: string;
 }
 export interface Game {
-  [x: string]: Platform;
+  // [x: string]: Platform;
   game: Platform;
   id: number;
   name: string;
   background_image: string;
   parent_platforms: {platform:Platform}[];
+  metacritic: number;
 }
 
 interface FetchGamesResponse {
