@@ -3,22 +3,17 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   Button,
 } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import usePlatforms from "../hooks/usePlatforms";
 
 const PlatformSelector = () => {
-  const { data } = usePlatforms();
-  console.log(data, "data~~~~~~~");
-  console.log(usePlatforms(), "usePlat~~~~");
+  const { data, error } = usePlatforms();
+  if(error) return null;
   return (
-    <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronDown />}>
+    <Menu >
+      <MenuButton mb={4} as={Button} rightIcon={<BsChevronDown />}>
         Actions
       </MenuButton>
       <MenuList>

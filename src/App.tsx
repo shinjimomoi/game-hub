@@ -34,7 +34,7 @@ function App() {
       </Show>
       <GridItem padding={4} area={"main"}>
         <PlatformSelector />
-        <GameGrid selectedGenre={selectedGenre} />
+        <GameGrid  selectedGenre={selectedGenre} />
       </GridItem>
     </Grid>
   );
